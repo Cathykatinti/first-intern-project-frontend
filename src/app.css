@@ -1,0 +1,116 @@
+.todo-list {
+  /* padding: 20px; */
+  /* margin-left: 600px; */
+  width: 100vh;
+  height: 50%;
+  margin: 20px auto;
+}
+.list-item {
+  list-style: none;
+}
+.list-row {
+  /* margin-left:10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #f1cfcf;
+  border-radius: 5px;
+  width: 30em;
+
+  padding: 10px;
+}
+
+.todo-input {
+  align-items: center;
+  justify-content: center;
+  margin-left: 450px;
+
+  max-width: 20%;
+  height: 50%;
+  padding: 20px;
+  background-color: rgb(172, 166, 166);
+}
+.app-bar {
+  align-items: center;
+  margin-left: 450px;
+  max-width: 1000px;
+}
+.first_items {
+  display: flex;
+}
+.btn-add {
+  background-color: aqua;
+  cursor: pointer;
+}
+.btn-add:hover {
+  color: red;
+  width: 60px;
+  height: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px;
+}
+.input:hover {
+  color: red;
+}
+.icon {
+  cursor: pointer;
+}
+.icon:hover {
+  color: red;
+  border-radius: 20px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  box-shadow: 0 10px 10px;
+  transition: 0.5s;
+  width: 20px;
+  height: 20px;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  word-wrap: break-word;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+.checkbox:hover {
+  color: red;
+}
+.todo-text {
+  flex-grow: 1; /* Allow the text to grow to fill the available space */
+  word-wrap: break-word; /* Allow the text to wrap if it's too long */
+  max-width: 90%; /* Set a maximum width for the text */
+  /*margin: 0; Remove default margin */
+}
+/*.edit-delete-text {
+  margin-left: 5px; /* Add some spacing between icon and text 
+}*/
+
+.edit-text,
+.delete-text {
+  display: none;
+  position: absolute;
+  top: 150px; /* Adjust the positioning as needed */
+  left: 60%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.edit-icon:hover + .edit-text,
+.delete-icon:hover + .delete-text {
+  display: block;
+}
+.main-container {
+  background-color: aliceblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
